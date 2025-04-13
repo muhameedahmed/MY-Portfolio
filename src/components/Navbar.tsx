@@ -10,7 +10,7 @@ function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { path: '/MY-Portfolio', label: 'Home' },
+    { path: '/MY-Portfolio/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/services', label: 'Services' },
     { path: '/portfolio', label: 'Portfolio' },
