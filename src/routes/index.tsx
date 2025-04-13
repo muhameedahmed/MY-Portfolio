@@ -9,7 +9,7 @@ import Contact from '../pages/Contact';
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/MY-Portfolio" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/portfolio" element={<Portfolio />} />
