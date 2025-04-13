@@ -8,7 +8,8 @@ function Home() {
   const Frontend = useRef<HTMLSpanElement | null>(null);
   const Developer = useRef<HTMLSpanElement | null>(null);
   const headref = useRef<HTMLHeadingElement | null>(null);
-
+  const btn1 = useRef<HTMLAnchorElement | null>(null);
+  const btn2 = useRef<HTMLAnchorElement | null>(null);
   useEffect(() => {
     if (nameRef.current) {
       const tl = gsap.timeline();
@@ -46,6 +47,24 @@ function Home() {
         { opacity: 1,  x: 0, duration: 3, ease: 'power4.out' }
       );
     } 
+    if (btn1.current) {
+      const tl = gsap.timeline();
+  
+      tl.fromTo(
+        btn1.current,
+        { opacity: 0,  x: -500, y: 500 },
+        { opacity: 1,  x: 0, y:0, duration: 2, ease: 'power2.out' }
+      )
+    } 
+    if (btn2.current) {
+      const tl = gsap.timeline();
+  
+      tl.fromTo(
+        btn2.current,
+        { opacity: 0,  x: 500 ,y: 500},
+        { opacity: 1,  x: 0,y:0, duration: 2, ease: 'power4.out' }
+      )
+    } 
   }, []);
   return (
     <div className="min-h-[calc(100vh-4rem)] flex items-center">
@@ -66,7 +85,7 @@ function Home() {
             I create beautiful, responsive, and user-friendly web applications using modern technologies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <Link ref={btn1}
               to="/portfolio"
               className="inline-flex items-center px-6 py-3 rounded-lg bg-gray-600 border-primary-600 text-white hover:bg-primary-800 transition-colors"
             >
@@ -74,6 +93,7 @@ function Home() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
+            ref={btn2}
               to="/contact"
               className="inline-flex items-center px-6 py-3 rounded-lg border-2 border-primary-600 text-primary-600 hover:bg-primary-50 dark:text-primary-400 dark:border-primary-400 dark:hover:bg-primary-900/50 transition-colors"
             >
