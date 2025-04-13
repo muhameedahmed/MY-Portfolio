@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 function About() {
   const imageRef = useRef<HTMLDivElement | null>(null);
   const Contentref = useRef<HTMLDivElement | null>(null);
-
+  const myimageurl =import.meta.env.BASE_URL +"/Myimage.png";
   useEffect(() => {
     if (imageRef.current) {
       const tl = gsap.timeline();
@@ -36,7 +36,7 @@ function About() {
           {/* Profile Image Section */}
           <div  ref={imageRef} className="relative">
             <img
-              src="/Myimage.png"
+              src={myimageurl}
               alt="Profile"
               className="rounded-2xl shadow-xl w-full object-cover aspect-[3/4]"
             />
