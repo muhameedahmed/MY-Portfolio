@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+// Assuming the image is in the public folder
+
 
 function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const logoUrl = import.meta.env.BASE_URL + '/LOGO.png';
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
@@ -23,7 +25,7 @@ function Navbar() {
         <div className="flex justify-between h-16 items-center">
           
           <NavLink to="/" className="text-xl font-bold text-gray-900 dark:text-white flex items-center hover:text-primary-900 dark:hover:text-primary-400">
-           <img className='h-10' src="/LOGO.png" alt="" />
+           <img className='h-10' src={logoUrl} alt="" />
             Muhammed Ahmed
           </NavLink>
 

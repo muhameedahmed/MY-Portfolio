@@ -32,7 +32,7 @@ function Portfolio() {
     {
       title: 'My Portfolio',
       description: 'A responsive portfolio website showcasing my frontend development skills, projects.',
-      image: '/MYWEBSITE.png',
+      image: import.meta.env.BASE_URL +'/MYWEBSITE.png',
       technologies: ['React', 'Type Script', 'TailwindCSs'],
       demoLink: '',
       githubLink: 'https://github.com/muhameedahmed/MY-Portfolio',
@@ -50,7 +50,7 @@ function Portfolio() {
     {
       title: 'Simple React website',
       description: 'Contain some features from React , routers And bootstrap ',
-      image: '/SIMPLEAPP.png',
+      image: import.meta.env.BASE_URL +'/SIMPLEAPP.png',
       technologies: ['React', 'Router-Dom', 'bootstrap'],
       demoLink: 'https://drive.google.com/file/d/1EBKaDzt_bkV1d8zrUalI48nXv8s94Prs/view?usp=drive_link',
       githubLink: 'https://github.com/muhameedahmed/Simple-React-App',
@@ -58,7 +58,7 @@ function Portfolio() {
     },   {
       title: 'Mealfy website',
       description: 'A website  to showcasing and sharing traditional Mealify Meal dishes and recipes ',
-      image: '/MEALFY.png',
+      image:import.meta.env.BASE_URL + '/MEALFY.png',
       technologies: ['HTML', 'CSS', 'bootstrap'],
       demoLink: 'https://drive.google.com/file/d/1xmhjnOTk3Ybbho3dkuvNEzwpFWVi2ivQ/view?usp=drive_link',
       githubLink: 'https://github.com/muhameedahmed/Mealify- ',
@@ -67,7 +67,7 @@ function Portfolio() {
     {
       title: 'Alex-Smith portfolio',
       description: ' A Simple portfolio website showcasing Anyone skills, projects ',
-      image: '/AlexSmith.png',
+      image: import.meta.env.BASE_URL +'/AlexSmith.png',
       technologies: ['HTML', 'CSS', 'bootstrap'],
       demoLink: 'https://drive.google.com/file/d/1RS5eb5ebyMHqtz3Lsb7k76ravi5k833e/view?usp=drive_link',
       githubLink: 'https://github.com/muhameedahmed/ALEX-SMiTH',
