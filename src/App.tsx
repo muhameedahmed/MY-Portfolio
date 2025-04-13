@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter as Router } from 'react-router-dom';
+
+import { HashRouter  } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Layout from './components/Layout';
 import AppRoutes from './routes';
@@ -7,11 +7,11 @@ import AppRoutes from './routes';
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <HashRouter>
         <Layout>
           <AppRoutes />
         </Layout>
-      </Router>
+      </HashRouter>
     </ThemeProvider>
   );
 }
