@@ -58,6 +58,7 @@ function Home() {
             </span>{' '}
             <br /> <span  ref={Frontend} className=" font-bold  inline-block">
             Frontend </span>
+            {' '}
             <span  ref={Developer} className=" font-bold  inline-block">
              Developer</span>
           </h1>
