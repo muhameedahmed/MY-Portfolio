@@ -7,14 +7,13 @@ import Contact from '../pages/Contact';
 
 function AppRoutes() {
   return (
-    <HashRouter>
+    <Routes>
       <Route path="/MY-Portfolio/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
-    </HashRouter>
+    </Routes>
   );
 }
-
 export default AppRoutes;
