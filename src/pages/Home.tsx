@@ -68,7 +68,7 @@ function Home() {
   }, []);
   return (
     <div className="min-h-[calc(100vh-4rem)] flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           <h1   ref={headref} className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-8">
             Hi, I'm{' '}
@@ -81,7 +81,7 @@ function Home() {
             <span  ref={Developer} className=" font-bold  inline-block">
              Developer</span>
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 mx-auto">
             I create beautiful, responsive, and user-friendly web applications using modern technologies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

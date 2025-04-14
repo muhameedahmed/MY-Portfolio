@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <footer className="bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
           <p className="text-sm text-gray-600 dark:text-gray-400">
             © 2025 - Muhammed Ahmed

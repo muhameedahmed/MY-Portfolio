@@ -31,7 +31,7 @@ function About() {
   }, []);
   return (
     <div  className="container mx-auto px-4 py-16">
-      <div className="max-w-6xl mx-auto">
+      <div className=" mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Profile Image Section */}
           <div  ref={imageRef} className="relative">
@@ -52,7 +52,7 @@ function About() {
               <div className="h-1 w-20 bg-primary-600 rounded"></div>
             </div>
 
-            <div className="prose dark:prose-invert max-w-none">
+            <div className="prose dark:prose-invert">
               <p className="text-lg text-gray-700 dark:text-gray-300">
                 I'm a passionate Frontend Developer with experience crafting beautiful and functional web experiences. My expertise lies in creating responsive, user-friendly interfaces that deliver exceptional user experiences.
               </p>

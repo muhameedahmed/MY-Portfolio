@@ -39,13 +39,13 @@ function Services() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="max-w-6xl mx-auto">
+      <div className=" mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             My Services
           </h1>
           <div className="h-1 w-20 bg-primary-600 rounded mx-auto"></div>
-          <p className="mt-6 text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-gray-700 dark:text-gray-300  mx-auto">
             I offer a comprehensive range of web development services to help bring your digital vision to life.
           </p>
         </div>
