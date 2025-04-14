@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-sm z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           
           <NavLink to="/" className="text-xl font-bold text-gray-900 dark:text-white flex items-center hover:text-primary-900 dark:hover:text-primary-400">
