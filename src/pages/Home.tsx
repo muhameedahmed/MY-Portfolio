@@ -28,8 +28,8 @@ function Home() {
   
       tl.fromTo(
         Frontend.current,
-        { opacity: 0,  x: -500 },
-        { opacity: 0.5,  x: -200, duration: 0, ease: 'power2.out' }
+        { opacity: 0,  x: -100 },
+        { opacity: 0.5,  x: -50, duration: 0, ease: 'power2.out' }
       ).to(
         Frontend.current,
         { opacity: 1,  x: 0, duration: 3, ease: 'power4.out' }
@@ -40,8 +40,8 @@ function Home() {
   
       tl.fromTo(
         Developer.current,
-        { opacity: 0,  x: 500 },
-        { opacity: 0.5,  x: 200, duration: 0, ease: 'power2.out' }
+        { opacity: 0,  x: 100 },
+        { opacity: 0.5,  x: 50, duration: 0, ease: 'power2.out' }
       ).to(
         Developer.current,
         { opacity: 1,  x: 0, duration: 3, ease: 'power4.out' }
@@ -52,7 +52,7 @@ function Home() {
   
       tl.fromTo(
         btn1.current,
-        { opacity: 0,  x: -500, y: 500 },
+        { opacity: 0,  x: -100, y: 500 },
         { opacity: 1,  x: 0, y:0, duration: 2, ease: 'power2.out' }
       )
     } 
@@ -61,13 +61,13 @@ function Home() {
   
       tl.fromTo(
         btn2.current,
-        { opacity: 0,  x: 500 ,y: 500},
+        { opacity: 0,  x: 100 ,y: 500},
         { opacity: 1,  x: 0,y:0, duration: 2, ease: 'power4.out' }
       )
     } 
   }, []);
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex items-center">
+    <div className=" flex items-center">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           <h1   ref={headref} className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-8">
