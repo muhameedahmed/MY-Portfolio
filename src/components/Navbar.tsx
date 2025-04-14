@@ -20,7 +20,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-sm z-50">
+    <nav className="fixed  max-w-full top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-sm z-50">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           
